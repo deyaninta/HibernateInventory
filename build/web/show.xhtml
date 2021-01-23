@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:dataTable border="1" value="#{produk.getallrecords()}" var="p" cellspacing="0" >
+            <h:column>
+                <f:facet name="header">Kode Produk</f:facet>
+                #{p.kodeProduk}
+            </h:column>
+        <h:column>                   
+              <f:facet name="header">Nama</f:facet>               
+                #{p.namaProduk}
+        </h:column>
+            <h:column>                   
+              <f:facet name="header">Harga</f:facet>               
+                #{p.harga}
+        </h:column>
+            <h:column>                   
+              <f:facet name="header">Stok</f:facet>               
+                #{p.stok}
+        </h:column>
+        </h:dataTable>
+    </h:body>
+</html>
+

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>CRUD</title>
+    </h:head>
+    <h:body>
+        <h:form id="input">
+            <h:panelGrid columns="2">
+                Kode: <h:inputText value="#{produk.kodeProduk}"/>
+                Nama Produk: <h:inputText value="#{produk.namaProduk}"/>
+                Harga: <h:inputText value="#{produk.harga}"/>
+                Stok: <h:inputText value="#{produk.stok}"/>
+                <h:commandButton value="save produk" action="#{produk.save}"/>
+               
+            </h:panelGrid>
+       </h:form> <br></br><br></br>
+    </h:body>
+</html>
